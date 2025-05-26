@@ -45,7 +45,7 @@ Ricci, Matías
 
 [**Conclusión	15**](#conclusión)
 
-# **Introducción**  {#introducción}
+# **Introducción**
 
 Este es un trabajo realizado en la materia Electrónica analógica III perteneciente al noveno cuatrimestre de la carrera de ingeniería electrónica.
 
@@ -87,7 +87,7 @@ S2: Output plane stability circle; stable inside; K=1.09; S11=0.47 \< 161.10°; 
 
 ---
 
-# **Diseño de red de polarización** {#diseño-de-red-de-polarización}
+# **Diseño de red de polarización**
 
 Para comenzar con la red de polarización nos aseguramos de realizar un etapa previa al amplificador para poder asegurar el voltaje constante.  
 Utilizando un LM7805, Regulador de voltaje a 5V, teniendo en cuenta las recomendaciones del fabricante realizamos el siguiente circuito, el nos permite asegurar la salida de voltaje para la polarización (R simulará el resto del circuito).
@@ -151,7 +151,7 @@ Con este circuito conseguimos si conseguimos la polarización necesaria.
 Luego se realizaron los cálculos para las micro tiras necesarias dentro de un entorno de Python, donde en el mismo no solo conseguimos los parámetros de las microtiras sino también otras características como coeficientes de reflexión de entrada y salida, impedancias de entrada y salida. Más adelante se verán las simulaciones realizadas en el ADS(Advanced Design Simulation).  
 ---
 
-# **Diseño de microtiras**  {#diseño-de-microtiras}
+# **Diseño de microtiras**
 
 Para proceder al diseño de las microtiras, se debe primeramente realizar la caracterización del sustrato. Se compró una placa de FR4 de 10x10 cm, a la cual se le comió un pedazo en una esquina con ácido nítrico, para sacarle el cobre y así poder medir el ancho de la placa con y sin cobre.
 
@@ -182,7 +182,7 @@ Estos valores optimizados son los que utilizamos para realizar la placa físicam
 
 ---
 
-# **Resultado de simulación ideal** {#resultado-de-simulación-ideal}
+# **Resultado de simulación ideal**
 
 Luego de obtener los parámetros S para nuestra polarización se cargaron en el modelos BFP640 SPARAM para poder realizar las simulaciones.  
 ![][image13]  
@@ -190,7 +190,7 @@ Estos resultados son ideales, los valles están en la frecuencia exacta de traba
 
 ---
 
-# **Resultado de simulación de implementación física** {#resultado-de-simulación-de-implementación-física}
+# **Resultado de simulación de implementación física**
 
 Para tener una mayor precisión se realizó una Cosimulacion, la cual mediante el layout del cobre que diseñamos y aplicando las ecuaciones de Maxwell sobre el mismo, logra una simulación más cercana a lo que nos podemos esperar en la realidad.
 
@@ -199,7 +199,7 @@ Podemos ver que a diferencia de los resultados anteriores, aquí vemos corrimien
 
 ---
 
-# **Fotografía de implementación** {#fotografía-de-implementación}
+# **Fotografía de implementación**
 
 ![][image15]
 
@@ -208,7 +208,7 @@ Como se puede ver la presentación no fue lo más deseable ya que se fueron haci
 
 # 
 
-# **Resultado de medición** {#resultado-de-medición}
+# **Resultado de medición**
 
 Los resultados de la mediciones no fueron como los esperados, varios factores pudieron afectar a la hora de implementar el circuito como una mala masa, soldaduras ineficientes o que nuestro ƐR no sea el correcto.  
 Sin embargo se consigue una amplificación en la frecuencia deseada de alrededor de 8.5 dB,  
@@ -221,7 +221,7 @@ Se puede ver en trazo azul el resultado de la simulación ideal, en rosa la cosi
 
 ---
 
-# **Mejoras propuestas por el equipo** {#mejoras-propuestas-por-el-equipo}
+# **Mejoras propuestas por el equipo**
 
 **Cambio de Frecuencia**
 
@@ -240,7 +240,7 @@ En esta fuente de corriente, nosotros calculamos Rbias para el valor de corrient
 
 ---
 
-# **Conclusión** {#conclusión}
+# **Conclusión**
 
 Este trabajo nos permitió recorrer el ciclo completo de concepción de un amplificador de bajo ruido en microondas: partimos de la teoría de parámetros S y de las condiciones de mínima figura de ruido para comprender cómo las redes de adaptación influyen simultáneamente en ganancia, ruido y estabilidad; aprendimos a trasladar ese análisis al dominio práctico, usando simuladores de microondas para iterar entre el Smith chart y el layout, y confirmamos la importancia de modelar la placa, los componentes discretos y los accesorios de medición para que simulación y laboratorio converjan. El ensayo de estabilidad nos mostró por qué la retro‑alimentación inversa, aun cuando sea pequeña, puede comprometer el diseño si no se aísla adecuadamente. En laboratorio descubrimos que la soldadura, el encapsulado y el montaje introducen sutiles variaciones que obligan a re‑sintonizar, afianzando la noción de que un diseño de RF nunca está “cerrado” hasta que se mide el prototipo real. Finalmente, el proceso reforzó la utilidad de documentar cada iteración y de contrastar la teoría con la práctica: más allá de los valores concretos obtenidos, el aprendizaje clave fue interiorizar la metodología de diseño iterativo, la validación experimental rigurosa y la lectura crítica de los resultados para seguir optimizando el circuito.
 
