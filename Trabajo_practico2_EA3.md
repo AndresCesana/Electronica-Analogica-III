@@ -244,38 +244,38 @@ En esta fuente de corriente, nosotros calculamos Rbias para el valor de corrient
 
 Este trabajo nos permitió recorrer el ciclo completo de concepción de un amplificador de bajo ruido en microondas: partimos de la teoría de parámetros S y de las condiciones de mínima figura de ruido para comprender cómo las redes de adaptación influyen simultáneamente en ganancia, ruido y estabilidad; aprendimos a trasladar ese análisis al dominio práctico, usando simuladores de microondas para iterar entre el Smith chart y el layout, y confirmamos la importancia de modelar la placa, los componentes discretos y los accesorios de medición para que simulación y laboratorio converjan. El ensayo de estabilidad nos mostró por qué la retro‑alimentación inversa, aun cuando sea pequeña, puede comprometer el diseño si no se aísla adecuadamente. En laboratorio descubrimos que la soldadura, el encapsulado y el montaje introducen sutiles variaciones que obligan a re‑sintonizar, afianzando la noción de que un diseño de RF nunca está “cerrado” hasta que se mide el prototipo real. Finalmente, el proceso reforzó la utilidad de documentar cada iteración y de contrastar la teoría con la práctica: más allá de los valores concretos obtenidos, el aprendizaje clave fue interiorizar la metodología de diseño iterativo, la validación experimental rigurosa y la lectura crítica de los resultados para seguir optimizando el circuito.
 
-[image1]: extracted_images/image01.png
+[image1]: imagenes/image01.png
 
-[image2]: extracted_images/image02.png
+[image2]: imagenes/image02.png
 
-[image3]: extracted_images/image03.png
+[image3]: imagenes/image03.png
 
-[image4]: extracted_images/image04.png
+[image4]: imagenes/image04.png
 
-[image5]: extracted_images/image05.png
+[image5]: imagenes/image05.png
 
-[image6]: extracted_images/image06.png
+[image6]: imagenes/image06.png
 
-[image7]: extracted_images/image07.png
+[image7]: imagenes/image07.png
 
-[image8]: extracted_images/image08.png
+[image8]: imagenes/image08.png
 
-[image9]: extracted_images/image09.png
+[image9]: imagenes/image09.png
 
-[image10]: extracted_images/image10.png
+[image10]: imagenes/image10.png
 
-[image11]: extracted_images/image11.png
+[image11]: imagenes/image11.png
 
-[image12]: extracted_images/image12.png
+[image12]: imagenes/image12.png
 
-[image13]: extracted_images/image13.png
+[image13]: imagenes/image13.png
 
-[image14]: extracted_images/image14.png
+[image14]: imagenes/image14.png
 
-[image15]: extracted_images/image15.png
+[image15]: imagenes/image15.png
 
-[image16]: extracted_images/image16.png
+[image16]: imagenes/image16.png
 
-[image17]: extracted_images/image17.png
+[image17]: imagenes/image17.png
 
-[image18]: extracted_images/image18.png
+[image18]: imagenes/image18.png
